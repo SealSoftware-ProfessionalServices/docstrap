@@ -38,6 +38,7 @@
 
 
 <article>
+ <?js if (doc.hideconstructor === false) { ?>
     <div class="container-overview">
     <?js if (doc.kind === 'module' && doc.modules) { ?>
         <?js if (doc.description) { ?>
@@ -62,7 +63,7 @@
         <?js } ?>
     <?js } ?>
     </div>
-
+    <?js } ?>
     <?js if (doc.augments && doc.augments.length) { ?>
         <h3 class="subsection-title">Extends</h3>
 
